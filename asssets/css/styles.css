@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+	background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.resume{
+	width: 800px;
+	background: #fff;
+	margin: 25px auto;
+	display: flex;
+	border-radius: 10px;
+}
+
+.left{
+	background: #292b2f;
+	width: 250px;
+	padding: 0 20px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.right{
+	width: calc(100% - 250px);
+	border-radius: 10px;
+}
+
+.left .img_holder{
+	text-align: center;
+	padding: 20px 0;
+}
+
+.left .img_holder img{
+	width: 200px;
+	border-radius: 50%;
+}
+
+.pb{
+	padding-bottom: 20px;
+}
+
+.title{
+	font-size: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	padding-bottom: 10px;
+	color: var(--primary-color);
+	position: relative;
+	text-align: right;
+	margin-bottom: 15px;
+}
+
+.title:before{
+	content: "";
+	position: absolute;
+	top: 35px;
+	right: 0;
+	width: 50px;
+	height: 3px;
+	background: var(--primary-color);
+}
+
+.left .icon{
+	font-size: 20px;
+	color: var(--secondary-color);
+}
+
+.left .text{
+	color: var(--secondary-color);
+	text-transform: uppercase;
+	font-size: 13px;
+}
+
+.contact .li_wrap{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.contact .li_wrap .icon{
+	width: 50px;
+	height: 50px;
+	background: #fff;
+	border-radius: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 15px;
+}
+
+.contact .li_wrap .text{
+	width: calc(100% - 50px);
+	word-break: break-word;
+	color: #fff;
+}
+
+.skills ul,
+.hobbies ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+
+.skills .li_wrap {
+	width: 100px;
+	height: 100px;
+	margin-bottom: 15px;
+	border-radius: 15px;;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	border: 2px solid #fff;
+	
+	
+}
+
+.skills .li_wrap .textr{
+	margin: center;
+	color: white;
+	width: 23px;
+	font-size: 15px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+.skills .li_wrap .text {
+	
+	margin: center;
+	color: white;
+	width: 23px;
+	font-size: 15px;
+	margin-bottom: 10px;
+
+}
+
+.skills .li_wrap img{
+	margin-top: 15px;
+}
+
+.skills .li_wrap:hover{
+	background: #fff;
+}
+
+
+.hobbies .li_wrap{
+	width: 100px;
+	height: 100px;
+	margin-bottom: 15px;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+
+/* Liwrap img */
+.li_wrap img {
+	width: 110px;
+	height: 40px;
+	object-fit: contain;
+	
+}
+
+.Funtap {
+	width: 200px;
+	height: 200px;
+}
+
+.li_wrap {
+	overflow: hidden;
+}
+
+.hobbies .li_wrap .text{
+	margin-top: 7px;
+}
+
+.hobbies .li_wrap{
+	border: 2px solid #fff;
+}
+
+.hobbies .li_wrap .icon,
+.hobbies .li_wrap .text{
+	color: #fff;
+}
+
+.hobbies .li_wrap:hover{
+	background: #fff;
+}
+
+.skills .li_wrap:hover .icon,
+.skills .li_wrap:hover .text,
+.skills .li_wrap:hover .textr,
+.hobbies .li_wrap:hover .icon,
+.hobbies .li_wrap:hover .text{
+	color: var(--secondary-color);
+}
+
+.header{
+	background: #292b2f;
+	padding: 15px 30px;
+	color: #fff;
+	height: 240px;
+	border-top-right-radius: 10px;
+}
+
+@-webkit-keyframes aitf {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
+}
+
+.header .name{
+	font-size: 40px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 3px;
+	color: var(--primary-color);
+	display: inline-block;
+	background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: aitf 80s linear infinite;
+	-webkit-transform: translate3d(0,0,0);
+	-webkit-backface-visibility: hidden;
+
+}
+
+.header .role{
+	font-weight: 300;
+	font-size: 20px;
+}
+
+.header .about{
+	margin-top: 40px;
+	line-height: 26px;
+	text-align: justify;
+}
+
+.right_inner{
+	padding: 30px;
+	color: #292b2f;
+}
+
+.right_inner .education{
+	margin-top: 30px;
+}
+
+.right_inner .li_wrap{
+	display: flex;
+	margin-bottom: 15px;
+}
+
+.right_inner .li_wrap .date {
+    width: 125px;
+    color: var(--secondary-color);
+}
+
+.right_inner .li_wrap .info{
+	width: calc(100%  - 125px);
+	padding-left: 25px;
+	position: relative;
+	word-spacing: 5px;
+	line-height: 25px;
+
+}
+
+.right_inner .li_wrap .info_title{
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2px;
+	color: var(--secondary-color);
+}
+
+.right_inner .li_wrap .info_com{
+	font-weight: 300;
+	font-size: 14px;
+	margin-top: 3px;
+}
+
+.right_inner .li_wrap .info_cont{
+	margin-top: 15px;
+}
+
+.right_inner .li_wrap .info:before{
+	content: "";
+	position: absolute;
+	top: 3px;
+	left: 0;
+	width: 10px;
+	height: 10px;
+	background: var(--secondary-color);
+	border-radius: 50%;
+}
+
+.right_inner .li_wrap .info:after{
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 4px;
+	width: 2px;
+	height: 90%;
+	background: var(--secondary-color);
+}
+
+/* icon */
+
+.contact-icon {
+	margin: 20px 0;
+}
+
+.contact-icon > ul {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 20px;
+	/* color: var(--secondary-color); */
+}
+
+.contact-icon li {
+	position: relative;
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	border-radius: 50%;
+}
+
+.contact-icon a {
+	color: white;
+}
+
+.contact-icon li:hover {
+	background-color: white;
+}
+
+.contact-icon li:hover a {
+	color: var(--secondary-color);
+}
+
+.contact-icon i {
+	position: relative;
+	top: 9px;
+	left: 11px;
+}
+
+.my-fb.fab.fa-facebook-f {
+	left: 14px;
+}

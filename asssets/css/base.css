@@ -1,0 +1,39 @@
+:root {
+    --primary-color: #0f764d;
+    --secondary-color: #21c986; 
+    --white-color: #fff;
+    --black-color: #000;    
+    --text-color: #333;
+    --border-color: #dbdbdb;
+    --navbar-height: 50px;
+}
+
+.line-skill {
+    position: relative;
+    display: inline-block;
+    flex: 1;
+    height: 10px;
+    background-color: white;
+    margin-left: 10px;
+}
+
+.line-skill::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 10px;
+    background-color: #00ac5c;
+}
+
+.line-skill::after {
+    content: "50%";
+    position: absolute;
+    font-size: 10px;
+    font-weight: 550;
+    left: 55%;
+    top: -1px;
+}
+
+.no-upcase {
+    text-transform: none!important;
+}
